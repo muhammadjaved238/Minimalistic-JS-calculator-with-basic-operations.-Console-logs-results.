@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <script src="/style.css"></script>
+</head>
+<body>
+    
+    <button onclick="add()">add</button>
+    <button onclick="sub()">sub</button>
+    <button onclick="mul()">mul</button>
+    <button onclick="div()">div</button>
+    <p id="result">Result: </p>
+
+<script>
+    function add(){
+    const num1 = parseInt(prompt('Enter the first number '));
+    const num2 = parseInt(prompt('Enter the second number '));
+
+    const sum = num1 + num2;
+
+    console.log(`The sum of ${num1} and ${num2} is ${sum}`);
+    }
+    function sub(){
+    const num1 = parseInt(prompt('Enter the first number '));
+    const num2 = parseInt(prompt('Enter the second number '));
+
+    const sum = num1 - num2;
+
+    console.log(`The  subtact of ${num1} and ${num2} is ${sum}`);
+    }
+    function mul(){
+    const num1 = parseInt(prompt('Enter the first number '));
+    const num2 = parseInt(prompt('Enter the second number '));
+
+    const sum = num1 * num2;
+
+    console.log(`The MUltpliaction of ${num1} and ${num2} is ${sum}`);
+    }
+    function div(){
+    const num1 = parseInt(prompt('Enter the first number '));
+    const num2 = parseInt(prompt('Enter the second number '));
+
+    const sum = num1 / num2;
+
+    console.log(`The divsion of ${num1} and ${num2} is ${sum}`);
+    }
+    document.getElementById("result").innerHTML = "Please enter valid numbers.";
+
+    </script>
+</body>
+</html>
